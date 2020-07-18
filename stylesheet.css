@@ -1,0 +1,37 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Ketik code Anda dibawah */
+
+.Band-icon{
+  width:1700px;
+  margin:0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+.Band-icon h3{
+  margin:0 auto;
+}
+.icon{
+  float:left;
+}
+.icon logo{
+height: 30px;
+width: 30px;
+}
