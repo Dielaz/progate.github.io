@@ -1,100 +1,149 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="responsive.css">
-  <link rel="shortcut icon" href="favicon.ico" >
-  <!--     ┬ ┬┌─┐  ┌─┐┬─┐┌─┐        -->
-  <!--     │││├┤   ├─┤├┬┘├┤         -->
-  <!--     └┴┘└─┘  ┴ ┴┴└─└─┘        -->
-  <!--     ╔═╗╦═╗╔═╗╔═╗╔═╗╔╦╗╔═╗    -->
-  <!--     ╠═╝╠╦╝║ ║║ ╦╠═╣ ║ ║╣     -->
-  <!--     ╩  ╩╚═╚═╝╚═╝╩ ╩ ╩ ╚═╝    -->
-</head>
-<body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-        </div>
-        <span class="fa fa-bars menu-icon"></span>
-        <div class="header-right">
-          <a href="#">Lessons</a>
-          <a href="#">Sign in</a>
-          <a href="#" class="login">Log in</a>
-        </div>
-      </div>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>LEARN TO CODE.</h1>
-        <h1>LEARN TO BE CREATIVE.</h1>
-        <p>Progate is a web service where you can learn programming online.</p>
-        <p>We offer you a fully equipped coding environment to get you started.</p>
-        <div class="btn-wrapper">
-          <a href="#" class="btn signup">Sign up with Email</a>
-          <p>or</p>
-          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Sign up with Facebook</a>
-          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Sign up with Twitter</a>
-        </div>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .font_bagianutama{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    }
+    .container{
+      width: 100%;
+      height: 700px;
+      position: relative;
+      transition: .5s ease;
+      color: white;
+      background-image: url("background_gitar.jpg");
+      background-position: center;
+      text-align: center;
+    }
+    .container:hover{
+      background-image: url("background_transparent.jpg");
+    }
+    .content{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .content h1{
+      margin-bottom: 8px;
+      font-size: 80px;
+    }
+    .content p{
+      font-size: 18px;
+    }
+    .button{
+      width: 200px;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 10px;
+      transition: .5s ease;
+      background-color: #181818;
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .button:hover{
+      background-color: white;
+      color: black;
+      border-radius: 1px;
+}
+
+    .container-tambahan{
+      Height:300px;
+      width:100%;
+      padding:0 15px;
+      background-color: #f7f7f7;
+
+    }
+      .container-icon{
+        padding-top:20px;
+
+      }
+      .container-icon h1{
+        text-align:center;
+      }
+      .container-icon h3{
+        vertical-align: bottom;
+        position:absolute;
+        top:60px;
+        left:90px;
+      }
+      .icon{
+        float:left;
+        width:20%;
+        height:100px;
+        position:relative;
+      }
+      .logo{
+        position:absolute;
+        left:90px;
+      }
+      .button-link{
+        position:absolute;
+        top:80px;
+        left:45px;
+        width: 150px;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        transition: .5s ease;
+        background-color: #181818;
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      .button-link:hover{
+        background-color: white;
+        color: black;
+        border-radius: 1px;
+    }
+  </style>
+  <body>
+    <div class="container font_bagianutama">
+      <div class="content font_bagianutama">
+        <h1 class="font_bagianutama">Pseudo Band Official</h1>
+        <hr>
+        <p class="font_bagianutama">Berlari Sesingkat Rangkuman, Menuduh Se-cepat Kesimpulan, Mungkin Hanya Hampa, Kadang Pula Candaan Belaka.</p>
+        <p><i>- Regalia Band -</i></p>
+        <button class="button font_bagianutama"><b>Tour Date</b></button>
+        <button class="button font_bagianutama"><b>New Albums</b></button>
       </div>
     </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Learn Where to Get Started!</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>HTML & CSS</p>
-            </div>
-            <p class="text-contents">Languages used to build and design the appearances of your websites. HTML adds the structure, and CSS styles it.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
-            </div>
-            <p class="text-contents">A fast, feature-rich and easy-to-use JavaScript library that handles animations and Ajax requests.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
-            </div>
-            <p class="text-contents">A dynamic, general-purpose language that is simple and productive. It is commonly used around the world to build web applications.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
-            </div>
-            <p class="text-contents">An open source scripting language that can be embedded into HTML, and well suited for web development.</p>
-          </div>
-          <div class="clear"></div>
-        </div>
+
+   <div class="container-tambahan">
+    <div class="container-icon">
+      <h1>Our Stars!!</h1>
+      <div class="icon vocalist">
+         <img class="logo"src="singer2.png" height="80px" width="60px">
+         <h3>Firza</h3>
+         <button class="button-link">Check Profile</button>
+      </div>
+      <div class="icon Vocalist2">
+        <img class="logo"src="singer1.png" height="80px" width="60px">
+        <h3>Dian</h3>
+        <button class="button-link">Check Profile</button>
+      </div>
+      <div class="icon Guitarist">
+        <img class="logo"src="guitarist1.png" height="80px" width="60px">
+        <h3>Diel</h3>
+        <button class="button-link">Check Profile</button>
+      </div>
+      <div class="icon Bassis">
+        <img class="logo"src="guitarist2.png" height="80px" width="60px">
+        <h3>Doddy</h3>
+        <button class="button-link">Check Profile</button>
+      </div>
+      <div class="icon Drummer">
+        <img class="logo"src="drummer.png"height="80px" width="60px">
+        <h3>Damhuri</h3>
+        <button class="button-link">Check Profile</button>
       </div>
     </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Ready to become an awesome programmer?</h2>
-          <h3>Let's learn to code, learn to be creative!</h3>
-        </div>
-        <span class="btn message">Start Learning</span>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-        <p>Learn to code, learn to be creative.</p>
-      </div>
-    </footer>
+  </div>
+
   </body>
 </html>
